@@ -4,6 +4,8 @@ import java.util.Vector;
 public class Customer {
     private String name;
     private Vector rentals = new Vector();
+    private double totalAmount;
+    private int frequentRenterPoints;
     
     public Customer(String name) {
         name = name;
@@ -17,7 +19,15 @@ public class Customer {
         return name;
     }
 
-    public String statement() {
+    public double getTotalAmount() {
+		return totalAmount;
+	}
+
+	public int getFrequentRenterPoints() {
+		return frequentRenterPoints;
+	}
+
+	public String statement() {
         double totalAmount = 0;
         int frequentRenterPoints = 0;
         Enumeration rentals = this.rentals.elements();
