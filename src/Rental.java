@@ -7,10 +7,6 @@ public class Rental {
 		daysRented = daysRented;
 	}
 
-	public Movie getMovie() {
-		return movie;
-	}
-
 	public int getDaysRented() {
 		return daysRented;
 	}

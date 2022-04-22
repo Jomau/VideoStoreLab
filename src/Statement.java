@@ -1,7 +1,5 @@
 import java.util.ArrayList;
-import java.util.Enumeration;
 import java.util.List;
-import java.util.Vector;
 
 public class Statement {
 	private String customerName;
@@ -15,10 +13,6 @@ public class Statement {
 
 	public void addRental(Rental rental) {
 		this.rentals.add(rental);
-	}
-
-	public String getCustomerName() {
-		return customerName;
 	}
 
 	public double getTotalAmount() {
