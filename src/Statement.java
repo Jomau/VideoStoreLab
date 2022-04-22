@@ -27,7 +27,7 @@ public class Statement {
 		return frequentRenterPoints;
 	}
 
-	public String statement() {
+	public String generate() {
         double totalAmount = 0;
         int frequentRenterPoints = 0;
         Enumeration rentals = this.rentals.elements();
