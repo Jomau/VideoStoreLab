@@ -4,9 +4,17 @@ import java.util.Vector;
 public class Customer {
     private String name;
     private Vector rentals = new Vector();
-
+    
     public Customer(String name) {
         name = name;
+    }
+
+    public void addRental(Rental arg) {
+        rentals.addElement(arg);
+    }
+
+    public String getName() {
+        return name;
     }
 
     public String statement() {
@@ -51,13 +59,5 @@ public class Customer {
         result += "You earned " + String.valueOf(frequentRenterPoints) +
                 " frequent renter points\n";
         return result;
-    }
-
-    public void addRental(Rental arg) {
-        rentals.addElement(arg);
-    }
-
-    public String getName() {
-        return name;
     }
 }
