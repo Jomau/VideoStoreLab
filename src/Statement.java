@@ -1,13 +1,13 @@
 import java.util.Enumeration;
 import java.util.Vector;
 
-public class Customer {
+public class Statement {
     private String name;
     private Vector rentals = new Vector();
     private double totalAmount;
     private int frequentRenterPoints;
     
-    public Customer(String name) {
+    public Statement(String name) {
         name = name;
     }
 
